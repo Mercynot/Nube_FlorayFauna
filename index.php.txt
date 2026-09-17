@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Flora Y Fauna</title>
+    <style>
+      body { 
+        background-image: url('https://flagcdn.com/cl.svg');
+        background-size: cover;
+        font-family: Arial; 
+      }
+      div { background-color: rgba(255, 255, 255, 0.9); padding: 20px; }
+      h1 { color: blue; }
+      table { border-collapse: collapse; width: 100%; background-color: white; }
+      th { background-color: blue; color: white; }
+      th, td { border: 1px solid red; padding: 8px; }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Catalogo Flora Y Fauna - Computacion En La Nube | Marcial Soto X Gustavo Diaz</h1>
+        <p><strong>Estructura:</strong> Servidor Web alojado en Azure:v</p>
+
+        <?php
+        $servidor = "dbtorazo.database.windows.net"; 
+        $usuario = "mercy";
+        $basededatos = "DBTorazo";
+
+        echo "<p><em>* Conectado al servidor IaaS :v / Paas: <strong>$servidor</strong>...</em></p>";
+        ?>
+
+        <table>
+            <tr>
+                <th>Especie</th>
+                <th>Reino</th>
+                <th>Nombre Cientifico</th>
+                <th>Estado de Conservacion</th>
+            </tr>
+            <tr>
+                <td>Puma</td>
+                <td>Fauna</td>
+                <td>Puma Concolor</td>
+                <td>Preocupacion menor</td>
+            </tr>
+            <tr>
+                <td>Araucaria</td>
+                <td>Flora</td>
+                <td>Araucaria araucana</td>
+                <td>En Peligro</td>
+            </tr>
+            <tr>
+                <td>Copihue</td>
+                <td>Flora</td>
+                <td>Lapageria rosea</td>
+                <td>Vulnerable</td>
+            </tr>
+            <tr>
+                <td>Huemul</td>
+                <td>Fauna</td>
+                <td>Hippocamelus bisulcus</td>
+                <td>En peligro</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

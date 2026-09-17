@@ -1,0 +1,17 @@
+
+CREATE DATABASE ecologia_chile;
+USE ecologia_chile;
+
+CREATE TABLE especies (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_comun VARCHAR(100),
+    reino ENUM('Flora', 'Fauna'),
+    nombre_cientifico VARCHAR(100),
+    estado_conservacion VARCHAR(50)
+);
+
+INSERT INTO especies (nombre_comun, reino, nombre_cientifico, estado_conservacion) VALUES
+('Puma', 'Fauna', 'Puma concolor', 'Preocupación menor'),
+('Araucaria', 'Flora', 'Araucaria araucana', 'En Peligro'),
+('Copihue', 'Flora', 'Lapageria rosea', 'Vulnerable'),
+('Huemul', 'Fauna', 'Hippocamelus bisulcus', 'En Peligro');
